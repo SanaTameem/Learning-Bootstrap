@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+  </head>
+  <body>
+    <!-- Default Img -->
+    <h1>Default Img</h1>
+    <img src="../assets/kitten.jpg" alt="Kitten-default-Img" />
+    <br />
+
+    <!-- Responsive Img -->
+    <h1>Responsive Img</h1>
+    <img
+      src="../assets/kitten.jpg"
+      alt="Kitten-responsive-Img"
+      class="img-fluid"
+    />
+    <br />
+
+    <!-- Rounded Img -->
+    <h1>Rounded Img</h1>
+    <img src="../assets/kitten.jpg" alt="Kitten-rounded-Img" class="rounded" />
+    <br />
+
+    <!-- Thumbnail Img -->
+    <h1>Thumbnail Img</h1>
+    <img
+      src="../assets/kitten.jpg"
+      alt="Kitten-Thumbnail-Img"
+      class="img-thumbnail"
+    />
+    <br />
+
+    <!-- Images Alignment -->
+    <h1>Alignment</h1>
+    <h3>Float</h3>
+    <!-- Adding the clearfix class to an element ensures that it properly contains its floated children by clearing the floats. -->
+    <div class="clearfix">
+      <img
+        src="../assets/kitten.jpg"
+        alt="Img-float-left"
+        class="float-start"
+      />
+      <img src="../assets/kitten.jpg" alt="Img-float-right" class="float-end" />
+    </div>
+    <br />
+
+    <h3>Spacing Utilities</h3>
+    <div>
+      <img
+        src="../assets/kitten.jpg"
+        alt="Img-margin-right auto"
+        class="d-block me-auto"
+      />
+      <br />
+      <img
+        src="../assets/kitten.jpg"
+        alt="Img-display block"
+        class="d-block m-auto"
+      />
+      <br />
+      <img
+        src="../assets/kitten.jpg"
+        alt="Img-margin-left auto"
+        class="d-block ms-auto"
+      />
+    </div>
+    <br />
+
+    <h3>Text Alignment</h3>
+    <div class="text-start">
+      <img src="../assets/kitten.jpg" alt="Img-margin-left auto" />
+    </div>
+    <div class="text-center">
+      <img src="../assets/kitten.jpg" alt="Img-margin-left auto" />
+    </div>
+    <div class="text-end">
+      <img src="../assets/kitten.jpg" alt="Img-margin-left auto" />
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
