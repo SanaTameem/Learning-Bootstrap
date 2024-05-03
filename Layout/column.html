@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Verticle Allignments -->
+    <div class="container">
+      <div
+        class="row bg-secondary border align-items-start"
+        style="height: 100px"
+      >
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+      </div>
+      <br />
+
+      <div
+        class="row bg-secondary border align-items-center"
+        style="height: 100px"
+      >
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+      </div>
+      <br />
+
+      <div
+        class="row bg-secondary border align-items-end"
+        style="height: 100px"
+      >
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+        <div class="col bg-primary border">col</div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="row bg-secondary border" style="height: 100px">
+        <div class="col align-self-start bg-primary border">
+          .col align-self-start
+        </div>
+        <div class="col align-self-center bg-primary border">
+          .col align-self-center
+        </div>
+        <div class="col align-self-end bg-primary border">
+          .col align-self-end
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Horizontal Allignments -->
+    <div class="container">
+      <div class="row bg-secondary border justify-content-start">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+      <div class="row bg-secondary border justify-content-center">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+      <div class="row bg-secondary border justify-content-end">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+      <div class="row bg-secondary border justify-content-around">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+      <div class="row bg-secondary border justify-content-between">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+      <div class="row bg-secondary border justify-content-evenly">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Column Wrapping -->
+    <!-- If the total size of columns in a row goes beyond 12 it is automatically going to the next row. -->
+    <div class="container">
+      <div class="row bg-secondary border">
+        <div class="col-8 bg-primary border">.col-8</div>
+        <div class="col-5 bg-primary border">.col-5</div>
+        <div class="col-3 bg-primary border">.col-3</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Breaking Columns using sizing utility classes -->
+    <div class="container">
+      <div class="row bg-secondary border justify-content-start">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="w-100"></div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+      <br />
+
+      <!-- Responsive Breaking Columns using sizing utility classes -->
+      <div class="row bg-secondary border">
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="w-100 d-none d-lg-block"></div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+        <div class="col-3 bg-primary border">col</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Reordering Columns-->
+    <div class="container">
+      <div class="row bg-secondary border">
+        <div class="col-2 bg-primary border order-last">First but Last</div>
+        <div class="col-2 bg-primary border order-3">Second but 3rd</div>
+        <div class="col-2 bg-primary border order-4">Third but 4th</div>
+        <div class="col-2 bg-primary border order-first">Fourth but 1st</div>
+        <div class="col-2 bg-primary border order-2">Fifht but 2nd</div>
+        <div class="col-2 bg-primary border order-5">Sixth but 5th</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Offsetting(create empty space or gaps between columns) offset comes before the column-->
+    <div class="container">
+      <div class="row bg-secondary border">
+        <div class="col-3 bg-primary border">.col-3</div>
+        <div class="col-4 offset-1 bg-primary border">.col-4 .offset-1</div>
+        <div class="col-3 offset-1 bg-primary border">.col-3 .offset-1</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Spacing Utilities (ms : margin left, me : margin right) -->
+    <div class="container" style="height: 100px">
+      <div class="row bg-secondary border" style="height: 100px">
+        <div class="col-3 m-auto bg-primary border">.col-3</div>
+        <div class="col-3 m-lg-auto bg-primary border">.col-3</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Standalone Column classes -->
+    <div class="container bg-secondary">
+      <div class="col-1 bg-primary border">col-1</div>
+      <div class="w-100"></div>
+      <div class="col-2 bg-primary border">col-2</div>
+      <div class="w-100"></div>
+      <div class="col-3 bg-primary border">col-3</div>
+      <div class="w-100"></div>
+      <div class="col-4 bg-primary border">col-4</div>
+      <div class="w-100"></div>
+      <div class="col-5 bg-primary border">col-5</div>
+      <div class="w-100"></div>
+      <div class="col-6 bg-primary border">col-6</div>
+      <div class="w-100"></div>
+      <div class="col-7 bg-primary border">col-7</div>
+      <div class="w-100"></div>
+      <div class="col-8 bg-primary border">col-8</div>
+      <div class="w-100"></div>
+      <div class="col-9 bg-primary border">col-9</div>
+      <div class="w-100"></div>
+      <div class="col-10 bg-primary border">col-10</div>
+      <div class="w-100"></div>
+      <div class="col-11 bg-primary border">col-11</div>
+      <div class="w-100"></div>
+      <div class="col-12 bg-primary border">col-12</div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
