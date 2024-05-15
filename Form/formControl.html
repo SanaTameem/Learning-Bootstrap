@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Control</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Form Control Examples -->
+    <!-- Email type form Control -->
+    <h2>Email type form Control</h2>
+    <label for="email" class="form-label">Email Address:</label>
+    <input type="email" class="form-control" id="email" placeholder="Email" />
+    <br />
+
+    <!-- Textarea form Control -->
+    <h2>Textarea form Control</h2>
+    <label for="textArea" class="form-label">TextArea</label>
+    <textarea
+      id="textArea"
+      cols="30"
+      rows="4"
+      class="form-control"
+      placeholder="Some message here..."
+    ></textarea>
+
+    <!-- Form Control sizes -->
+    <h2>Small</h2>
+    <label for="text" class="form-label">Text</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      id="text"
+      placeholder="Text"
+    />
+    <br />
+
+    <h2>Large</h2>
+    <label for="text" class="form-label">Text</label>
+    <input
+      type="text"
+      class="form-control form-control-lg"
+      id="text"
+      placeholder="Text"
+    />
+    <br />
+
+    <!-- ReadOnly Form Controls -->
+    <h2>ReadOnly Form Controls</h2>
+    <label for="text" class="form-label">Text</label>
+    <input
+      type="text"
+      class="form-control"
+      id="text"
+      placeholder="Text"
+      readonly
+    />
+    <br />
+
+    <!-- Readonly plain text -->
+    <h2>Readonly Plain Text</h2>
+    <label for="text" class="form-label">Text</label>
+    <input
+      type="text"
+      class="form-control form-control-plaintext"
+      id="text"
+      placeholder="Text"
+      readonly
+    />
+    <br />
+
+
+    <!-- Color Picker -->
+    <h2>Color Picker</h2>
+    <label for="color" class="form-label">Color</label>
+    <input
+      type="color"
+      class="form-control form-control-color"
+      id="color"
+      value="#FFFF00"
+    />
+    <br />
+    
+
+    <!-- DataList -->
+    <h2>DataList</h2>
+    <label for="dataList" class="form-label">DataList</label>
+    <input
+      class="form-control"
+      id="dataList"
+      list="DataListOptions"
+    />
+    <datalist id="DataListOptions">
+      <option value="HTML">
+      <option value="CSS">
+      <option value="JS">
+      <option value="React">
+    </datalist>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
