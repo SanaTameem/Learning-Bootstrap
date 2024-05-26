@@ -12,68 +12,99 @@
       <h1 class="mb-5">Buttons</h1>
 
       <!-- Styles -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
-      <button class="">Link</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-link">Link</button>
 
       <br /><br />
 
       <!-- Button Sizes -->
-      <button class="">Regular</button>
-      <button class="">Small</button>
-      <button class="">Large</button>
+      <button class="btn btn-success btn-sm">Small</button>
+      <button class="btn btn-primary">Regular</button>
+      <button class="btn btn-danger btn-lg">Large</button>
 
       <br /><br />
 
       <!-- Button States -->
-      <button class="">Regular</button>
-      <button class="">Disabled</button>
-      <button class="">Active</button>
+      <button class="btn btn-primary">Regular</button>
+      <button class="btn btn-primary disabled">Disabled</button>
+      <button class="btn btn-primary active">Active</button>
 
       <br /><br />
 
       <!-- Outline Buttons -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+      <button class="btn btn-outline-info">Info</button>
+      <button class="btn btn-outline-light">Light</button>
+      <button class="btn btn-outline-dark">Dark</button>
 
       <br /><br />
 
       <!-- Links Formatted as Buttons -->
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
+      <a href="#" class="btn btn-primary">Link Button</a>
+      <a href="#" class="btn btn-primary btn-lg">Link Button</a>
+      <a href="#" class="btn btn-primary disabled">Link Button</a>
 
       <br /><br />
 
       <!-- Block Buttons -->
-      
+      <div class="d-grid vstack gap-3">
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-danger">Cancel</button>
+      </div>
 
       <br /><br />
 
       <!-- Button Group -->
-      
+      <div class="btn-group" role="group">
+        <button class="btn btn-primary">Left</button>
+        <button class="btn btn-warning">Middle</button>
+        <button class="btn btn-primary">Right</button>
+      </div>
 
       <br /><br />
 
       <!-- Button Toolbar -->
+      <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group me-3" role="group">
+          <button class="btn btn-primary">1</button>
+          <button class="btn btn-warning">2</button>
+          <button class="btn btn-primary">3</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary">4</button>
+          <button class="btn btn-warning">5</button>
+          <button class="btn btn-primary">6</button>
+        </div>
+      </div>
 
-       <br /><br />
-     
+      <br /><br />
 
       <!-- Dropdown Button -->
-     
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown Toggle
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Link 1</a></li>
+          <li><a href="#" class="dropdown-item">Link 2</a></li>
+          <li><a href="#" class="dropdown-item">Link 3</a></li>
+          <li><a href="#" class="dropdown-item">Link 4</a></li>
+        </ul>
+      </div>
 
       <!-- Don't go past here -->
     </div>
