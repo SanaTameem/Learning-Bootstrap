@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <title>Bootstrap Sandbox | Dark Mode</title>
+    <style>
+      body {
+        background-color: var(--bs-teal);
+      }
+
+      h1 {
+        color: var(--bs-yellow);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1 class="mb-5">Dark Mode</h1>
 
       <div class="card" style="width: 18rem">
+        <div class="card-header">This is a card</div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          voluptas.
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem" data-bs-theme="light">
         <div class="card-header">This is a card</div>
         <div class="card-body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
