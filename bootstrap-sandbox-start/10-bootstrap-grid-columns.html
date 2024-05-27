@@ -12,36 +12,117 @@
       <h1 class="mb-5">Bootstrap Grid Columns</h1>
 
       <!-- Basic Grid Layout -->
+      <div class="row">
+        <div class="col bg-light border">1 of 2 columns</div>
+        <div class="col bg-light border">2 of 2 columns</div>
+      </div>
+      <div class="row">
+        <div class="col bg-light border">1 of 3 columns</div>
+        <div class="col bg-light border">2 of 3 columns</div>
+        <div class="col bg-light border">3 of 3 columns</div>
+      </div>
 
       <br /><br />
 
       <!-- Column Sizes -->
+      <div class="row">
+        <!-- Mean take 6 out of 12 -->
+        <div class="col-6 bg-light border">1 of 2 columns</div>
+        <div class="col-6 bg-light border">2 of 2 columns</div>
+      </div>
+
+      <div class="row">
+        <!-- Mean take 4 out of 12 -->
+        <div class="col-4 bg-light border">1 of 2 columns</div>
+        <div class="col-8 bg-light border">2 of 2 columns</div>
+      </div>
 
       <br /><br />
 
       <!-- Responsive Grid -->
+      <div class="row">
+        <div class="col-md-6 bg-light border">1 of 2 columns</div>
+        <div class="col-md-6 bg-light border">2 of 2 columns</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 bg-light border">1 of 2 columns</div>
+        <div class="col-sm-6 col-lg-4 bg-light border">1 of 2 columns</div>
+        <div class="col-sm-6 col-lg-4 bg-light border">1 of 2 columns</div>
+        <div class="col-sm-6 col-lg-4 bg-light border">2 of 2 columns</div>
+      </div>
 
       <br /><br />
 
       <!-- Row Cols -->
+      <!-- Means divide them into 3 columns for large, 2 columns for medium and 1 column for less than medium -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+        <div class="col bg-light border">Column</div>
+      </div>
 
       <br /><br />
 
       <br /><br />
 
       <!-- Nesting -->
+      <div class="row">
+        <div class="col bg-light border p-3">Column</div>
+        <div class="col bg-light border p-3">Column</div>
+        <div class="col bg-light border p-3">
+          <div class="row">
+            <div class="col text-bg-dark">Nested</div>
+            <div class="col text-bg-dark">Nested</div>
+          </div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Gutters -->
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="p-3 text-bg-dark">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-dark">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-dark">Content Item</div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Offsetting Columns -->
+      <div class="row">
+        <!-- offset-4 means to push it for units then start the element -->
+        <div class="col-md-4 offset-4">
+          <div class="p-3 text-bg-dark">Content Item</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-dark">Content Item</div>
+        </div>
+      </div>
+      <br>
+      <div class="col-6 bg-light border offset-3">Helloo World</div>
 
       <br /><br />
 
       <!-- Ordering -->
+      <div class="row">
+        <div class="col bg-light border order-4">Column1</div>
+        <div class="col bg-light border order-3">Column2</div>
+        <div class="col bg-light border order-1">Column3</div>
+        <div class="col bg-light border order-2">Column4</div>
+      </div>
 
       <!-- Don't go past here -->
     </div>
