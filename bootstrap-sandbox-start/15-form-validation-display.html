@@ -11,18 +11,24 @@
     <div class="container">
       <h1 class="mb-5">Form Validation Display</h1>
 
-      <form>
+      <form novalidate class="needs-validation">
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
           <input type="text" class="form-control" id="username" required />
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Please write a name!</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
           <input type="email" class="form-control" id="email" required />
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Please write an email address!</div>
         </div>
         <div class="mb-3">
           <label for="city" class="form-label">City</label>
           <input type="text" class="form-control" id="city" required />
+          <div class="valid-feedback">Looks Good!</div>
+          <div class="invalid-feedback">Please write a city!</div>
         </div>
 
         <div class="mb-3">
@@ -37,6 +43,7 @@
             <label class="form-check-label" for="invalidCheck">
               Agree to terms and conditions
             </label>
+            <div class="invalid-feedback">You must agree with the terms and conditions!</div>
           </div>
         </div>
 
