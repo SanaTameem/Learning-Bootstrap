@@ -12,22 +12,118 @@
       <h1 class="mb-5">Dropdowns</h1>
 
       <!-- Single Button -->
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </div>
 
       <br /><br />
 
       <!-- Split Button -->
+      <div class="btn-group">
+        <button class="btn btn-danger">Action</button>
+        <button
+          class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+        >
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </div>
 
       <br /><br />
 
       <!-- Dark Dropdowns -->
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </div>
 
       <br /><br />
 
       <!-- Dropup -->
+      <div class="dropup">
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a href="#" class="dropdown-item">Item 1</a></li>
+          <li><a href="#" class="dropdown-item">Item 2</a></li>
+          <li><a href="#" class="dropdown-item">Item 3</a></li>
+        </ul>
+      </div>
 
       <br /><br />
 
       <!-- Navbar with Dropdown -->
+      <nav class="navbar navbar-expand-md text-bg-success">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand">Logo</a>
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <!-- Humburger Icon -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapse Part -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Item 1</a></li>
+                  <li><a href="#" class="dropdown-item">Item 2</a></li>
+                  <li><a href="#" class="dropdown-item">Item 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <!-- Don't go past here -->
     </div>
