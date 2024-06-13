@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <title>Bootstrap Sandbox | Popovers & Tooltips</title>
   </head>
   <body>
@@ -12,15 +12,47 @@
       <h1 class="mb-5">Popovers & Tooltips</h1>
 
       <!-- Popover -->
+      <button
+        class="btn btn-danger btn-lg"
+        id="popover"
+        data-bs-toggle="Popover"
+        data-bs-title="Popover Title"
+        data-bs-content="This is the content for popover."
+      >
+        Toggle Popover
+      </button>
 
       <br /><br />
 
       <!-- Tooltip -->
+      Lorem, ipsum dolor<a
+        href="#"
+        data-bs-toggle="tooltip"
+        data-bs-title="Tooltip One Title"
+        >Tooltip One</a
+      >
+      sit amet consectetur adipisicing elit. Excepturi sequi harum repudiandae
+      neque voluptatem possimus eligendi animi molestias? Ad adipisci fugiat
+      earum asperiores molestiae
+      <a href="#" data-bs-toggle="tooltip" data-bs-title="Tooltip Two Title"
+        >Tooltip Two</a
+      >ut maxime aperiam. Molestias, commodi quas!
 
       <!-- Don't go past here -->
     </div>
     <div style="margin-top: 350px"></div>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverElement = document.getElementById("popover");
+      const popover = new bootstrap.Popover(popoverElement);
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map((tooltipListElement) => {
+        new bootstrap.Tooltip(tooltipListElement);
+      });
+    </script>
   </body>
 </html>
