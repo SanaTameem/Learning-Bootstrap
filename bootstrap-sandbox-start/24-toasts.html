@@ -11,11 +11,15 @@
   <body>
     <div class="container">
       <h1 class="mb-5">Toasts</h1>
-      <button id="toastBtn" class="btn btn-primary">Toast Button</button>
+      <button id="toastBtn" class="btn btn-primary">Show Toast</button>
       <div class="toast-container position-fixed top-0 end-0 p-3">
         <div class="toast" id="myToast">
+          <div class="toast-header text-bg-warning">
+            <div class="me-auto">Bootstrap</div>
+            <small>11 min ago</small>
+          </div>
           <div class="toast-body text-bg-warning">
-            This is a Warning for you!
+            This is the last Warning for you!
           </div>
         </div>
       </div>
@@ -25,5 +29,18 @@
     <div style="margin-top: 350px"></div>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const toastBtn = document.querySelector('#toastBtn');
+      const toast = document.querySelector('#myToast');
+      console.log(toastBtn, toast);
+
+      if(toastBtn){
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast);
+
+        toastBtn.addEventListener('click', ()=>{
+          toastBootstrap.show();
+        })
+      }
+    </script>
   </body>
 </html>
