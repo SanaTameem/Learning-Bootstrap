@@ -1,0 +1,9 @@
+@media screen and (max-width: 450px) { /* Adjust this breakpoint as needed */
+  .card {
+    width: 90% !important;
+  }
+}
+
+.card{
+  border: none !important;
+}
