@@ -5,154 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Pricing Cards</title>
   </head>
   <body>
-    <div
-      class="container my-5 d-flex justify-content-center gap-3 flex-column flex-md-row align-items-center"
-    >
-      <div class="card rounded-4 shadow-lg" style="width: 20rem">
-        <div class="card-body mb-3">
-          <h5 class="fw-bold">Free</h5>
-          <p class="fs-6 text-secondary">For Freelancers</p>
-          <h2 class="fw-bold">$0</h2>
-          <ul class="list-group list-group-flush my-5">
-            <li class="list-group-item border-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              Single User
-            </li>
-            <li class="list-group-item border-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              10 Downloads Per Month
-            </li>
-            <li class="list-group-item border-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              Faster Files
-            </li>
-            <li class="list-group-item border-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              25 Custom Packs
-            </li>
-          </ul>
-          <div class="d-grid">
-            <button class="btn btn-sm btn-dark rounded-4">Subscribe</button>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="card rounded-4 shadow-lg border-0 mb-5">
+            <div class="card-body">
+              <div>
+                <h4 class="fw-bold">Free</h4>
+                <p class="text-muted">For Freelancers</p>
+              </div>
+              <h2 class="fs-1 fw-bold mb-5 mt-4">$0</h2>
+
+              <ul class="list-group list-group-flush mb-5 vstack gap-1">
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i> Single User
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i> 10 Downloads Per Month
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i> Faster Files
+                </li>
+                <li class="list-group-item border-0">
+                  <i class="bi bi-check2"></i> 25 Custom Packs
+                </li>
+              </ul>
+              <div class="d-grid">
+                <button class="btn btn-dark rounded-4 mb-4">Subscribe</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card rounded-4 shadow-lg text-bg-dark" style="width: 20rem">
-        <div class="card-body mb-3">
-          <h5 class="fw-bold">Pro</h5>
-          <p class="fs-6 text-light">For Agencies</p>
-          <h2 class="fw-bold">$100</h2>
-          <ul class="list-group list-group-flush my-5">
-            <li class="list-group-item border-0 text-bg-dark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              Unlimited Users
-            </li>
-            <li class="list-group-item border-0 text-bg-dark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              Unlimited Downloads
-            </li>
-            <li class="list-group-item border-0 text-bg-dark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              Fully-Editable Files
-            </li>
-            <li class="list-group-item border-0 text-bg-dark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check2"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                />
-              </svg>
-              200+ Custom Packs
-            </li>
-          </ul>
-          <div class="d-grid">
-            <button class="btn btn-sm btn-light rounded-4">Subscribe</button>
+        <div class="col-md-6">
+          <div class="card text-bg-dark rounded-4 shadow-lg border-0 mb-5">
+            <div class="card-body">
+              <div>
+                <h4 class="fw-bold">Pro</h4>
+                <p class="text-white">For Agencies</p>
+              </div>
+              <h2 class="fs-1 fw-bold mb-5 mt-4">$100</h2>
+
+              <ul class="list-group list-group-flush mb-5 vstack gap-1">
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i> Unlimited Users
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i> Unlimited Downloads
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i> Fully-Editable Files
+                </li>
+                <li class="list-group-item border-0 text-bg-dark">
+                  <i class="bi bi-check2"></i> 200+ Custom Packs
+                </li>
+              </ul>
+              <div class="d-grid">
+                <button class="btn btn-light rounded-4 mb-4">Subscribe</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
