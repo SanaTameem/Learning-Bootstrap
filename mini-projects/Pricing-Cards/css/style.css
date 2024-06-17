@@ -1,9 +1,9 @@
-@media screen and (max-width: 450px) { /* Adjust this breakpoint as needed */
-  .card {
-    width: 90% !important;
+@media screen and (min-width: 800px) {
+  .container{
+    width: 800px;
   }
 }
 
-.card{
-  border: none !important;
+body{
+  font-family: 'Poppins', sans-serif;
 }
