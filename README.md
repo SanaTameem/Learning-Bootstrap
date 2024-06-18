@@ -109,3 +109,24 @@ Or we can use :
 ```
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 ```
+
+## What is SAAS?
+Sass is a CSS pre-processor scripting language that adds extra features to CSS and is interpreted or compiled into Cascading Style Sheets (CSS).
+Sass files can have either .scss or .sass extensions.
+
+Here are some key features of Sass:
+- Variables : Sass allows you to define variables to store colors, fonts, and any other values that you reuse throughout your stylesheet.
+
+- Nestings : You can nest CSS selectors within one another, which helps in writing cleaner and more readable code, especially when dealing with complex CSS structures.
+
+- Mixings : Mixins are reusable blocks of styles that can be included in other selectors. They can also accept arguments, making them versatile for creating variations of styles.
+
+- Imports : Sass allows you to break your CSS code into smaller, modular files called partials, and then import them into one master stylesheet.
+
+- Inheritance (Extend): Sass supports inheritance of styles using @extend, which allows one selector to inherit styles from another selector.
+
+- Operators : Sass supports several operators that allow you to perform operations on values and variables within your stylesheets. These operators include arithmetic, comparison, and logical operators.
+
+- Conditionals : Sass provides conditional statements (@if, @else if, @else) that allow you to apply styles based on conditions.
+
+- Modularity & Reusability : Sass encourages modularity and reusability through several features.
