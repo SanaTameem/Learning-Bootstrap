@@ -109,3 +109,92 @@ Or we can use :
 ```
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 ```
+
+## What is SAAS?
+Sass is a CSS pre-processor scripting language that adds extra features to CSS and is interpreted or compiled into Cascading Style Sheets (CSS).
+Sass files can have either .scss or .sass extensions.
+
+Here are some key features of Sass:
+- Variables : Sass allows you to define variables to store colors, fonts, and any other values that you reuse throughout your stylesheet.
+
+- Nestings : You can nest CSS selectors within one another, which helps in writing cleaner and more readable code, especially when dealing with complex CSS structures.
+
+- Mixings : Mixins are reusable blocks of styles that can be included in other selectors. They can also accept arguments, making them versatile for creating variations of styles.
+
+- Imports : Sass allows you to break your CSS code into smaller, modular files called partials, and then import them into one master stylesheet.
+
+- Inheritance (Extend): Sass supports inheritance of styles using @extend, which allows one selector to inherit styles from another selector.
+
+- Operators : Sass supports several operators that allow you to perform operations on values and variables within your stylesheets. These operators include arithmetic, comparison, and logical operators.
+
+- Conditionals : Sass provides conditional statements (@if, @else if, @else) that allow you to apply styles based on conditions.
+
+- Modularity & Reusability : Sass encourages modularity and reusability through several features.
+
+
+
+## Install and setup Sass:
+```
+npm init -y
+npm install sass
+
+```
+
+## Compiling Sass : 
+- We should create a `style.scss` file.
+- Next we have to add a script in the package.json file like this : 
+```
+"scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  }
+```
+- Next we should run the script name in the console. 
+```
+npm run sass:build
+```
+
+
+## How to use the compiled sass file?
+- We just need to link the name of the compiled file at the `head` tag of our `html` file.
+
+
+## Installing Bootstrap using npm :
+```
+npm i bootstrap
+```
+
+## For changing custom bootstrap styles :
+- We need to install bootstrap.
+- we need to create a file with .scss extension like bootstrap.scss
+- Then we need to import the bootstrap from the node module in our bootstrap.scss file like this:
+```
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+```
+- Then we need to run the script
+```
+npm run sass:build
+```
+- After the compilation bootstrap.scss to bootstrap.css we need to link the bootstrap.css file to our html file.
+- Then for changing any custom bootstrap style we just need to change the value of the variable in the bootstrap.scss above the import line and recompile our scss file and it will work.
+
+
+## Install and setup Font Awesome using npm:
+- We need to install font awesome using this command :
+```
+npm i @fortawesome/fontawesome-free
+```
+- Then we need to create a file with .scss extension like fontawesome.scss and inside this file we need to import these files :
+```
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+```
+- Then we need to run our script to compile the scss file to css file.
+```
+npm run sass:build
+```
+- Then we should link the compiled file of fontawesome.css to our html file.
+- Then we need to copy the node_modules/@fortawesome/fontawesome-free/webfonts to the root directory of our project.
